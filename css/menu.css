@@ -1,0 +1,62 @@
+.Menu {
+  background-color: #14110e;
+  padding-top: 100px;
+  cursor: pointer;
+}
+.Menu-infos {
+  text-align: center;
+}
+.Menu-info {
+  text-align: center;
+  color: #c99e71;
+}
+.Menu-title {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+.Menu-cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 40px;
+}
+.Menu-card {
+  background-color: #121315;
+  padding: 30px;
+  text-align: center;
+}
+.Menu-card-title {
+  font-size: 23px;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  color: white;
+}
+.Menu-card-btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+.Menu-card-btn:hover {
+  background-color: #c99e71;
+  color: white;
+}
+.Menu-card-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 10px 0px;
+}
+.Menu-btn {
+  font-size: 26px;
+  text-align: center;
+  padding: 15px 25px;
+
+  margin-top: 50px;
+}
+.Menu-btn:hover {
+  background-color: #c99e71;
+  color: white;
+}

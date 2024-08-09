@@ -1,0 +1,36 @@
+.hero {
+  /* position: relative; */
+  padding: 170px 0px;
+  padding-left: 200px;
+  background-image: url(../img/coffeeimg.png);
+  object-fit: cover contain;
+  background-size: 100% 100%;
+  color: white;
+}
+/* .hero-info{
+ 
+} */
+
+.hero-title {
+  font-style: oblique;
+  font-size: 65px;
+  width: 500px;
+  padding-top: 0px;
+}
+.hero-desc {
+  font-size: 20px;
+  width: 450px;
+  padding: 40px 0px;
+  opacity: 0.6;
+}
+.hero-btn {
+  font-size: 28px;
+  padding: 15px 35px;
+}
+.hero-btn:hover {
+  background-color: #c99e71;
+  color: white;
+}
+.hero-img img {
+  width: 100%;
+}

@@ -1,0 +1,51 @@
+.Service {
+  background-color: #14110e;
+  padding-top: 70px;
+}
+.Service-cards {
+  display: flex;
+  justify-content: center;
+}
+.Service-card-img img {
+  width: 300px;
+}
+.Service-card-desc {
+  font-size: 22px;
+  color: white;
+}
+.Service2 {
+  background-color: #14110e;
+}
+.Service2-cards {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  gap: 40px;
+}
+.Service2-card-imgs {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.Service2-card-img img {
+  width: 240px;
+}
+.Service2-card-infos {
+  padding-top: 60px;
+  background-color: #1c1814;
+  width: 30%;
+  padding-left: 70px;
+}
+.Service2-card-info {
+  color: #c99e71;
+}
+.Service2-card-title {
+  color: white;
+  padding: 20px 0px;
+  font-size: 60px;
+  width: 76%;
+}
+.Service2-card-desc {
+  width: 300px;
+  color: white;
+}

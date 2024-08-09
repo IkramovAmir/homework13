@@ -1,1007 +1,807 @@
-*{
-    margin: 0;
+@import url(./reset.css);
+@import url("./header.css");
+@import url(./hero.css);
+@import url(./service.css);
+@import url(./menu.css);
+
+.Machine {
+  background-color: #14110e;
+}
+.Machine-cards {
+  display: flex;
+  justify-content: center;
+  /* gap: 100px; */
+  padding-top: 100px;
+}
+.Machine-card {
+  background-color: #1c1814;
+  padding: 30px 30px;
+  color: white;
+}
+.Machine-card-img {
+  padding: 0px 50px;
+}
+.Machine-card-title {
+  font-size: 46px;
+  width: 310px;
+}
+.Machine-card-desc {
+  width: 500px;
+  text-transform: capitalize;
+  padding: 30px 0px;
+}
+.Machine-card-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.Machine-card-btn:hover {
+  background-color: #c99e71;
+  color: white;
+}
+.popular-menu {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background-color: #14110e;
+}
+.popular-menu-desc {
+  text-align: center;
+  background-color: #14110e;
+  padding: 20px 0px;
+  padding-top: 160px;
+  color: #c99e71;
+}
+.popular-menu-title {
+  text-align: center;
+  background-color: #14110e;
+  padding-bottom: 50px;
+  font-size: 40px;
+  color: white;
+}
+
+.popolar-menu-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px;
+  border: 1px solid white;
+  color: white;
+}
+.popolar-menu-card-img img {
+  width: 40px;
+}
+.popolar-menu-card-desc {
+  padding-right: 100px;
+}
+.popolar-menu-card-price {
+  color: #c99e71;
+}
+.testimonial {
+  background-color: #14110e;
+}
+.testimonial-cards {
+  /* background-color: #121315; */
+  /* width: 500px; */
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.testimonial-desc {
+  text-align: center;
+  color: #c99e71;
+  padding-top: 100px;
+}
+.testimonial-card-img {
+  padding-right: 11px;
+}
+.testimonial-title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.testimonial-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 500px;
+  padding: 40px 5px;
+  background-color: #121315;
+}
+.testimonial-card-desc {
+  width: 350px;
+  font-size: 21px;
+  color: white;
+}
+.testimonial-card-2 {
+  display: flex;
+  gap: 250px;
+  padding: 10px 0px;
+  align-items: center;
+  color: white;
+}
+.testimonial-card-2-dec {
+  display: flex;
+}
+.testimonial-btns {
+  padding-top: 50px;
+  padding-left: 78%;
+}
+.left {
+  background-color: #121315;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.left:hover {
+  background-color: #c99e71;
+}
+.right {
+  background-color: #121315;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.right:hover {
+  background-color: #c99e71;
+}
+.Booking {
+  background-color: #14110e;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+.Booking-cards {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: px;
+}
+.Booking-card {
+  background-color: #1c1814;
+  padding: 10px 80px;
+}
+.Booking-card-title {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.Booking-img img {
+  width: 500px;
+}
+.Booking-card-desc {
+  color: #fb8c16;
+  text-align: center;
+}
+.Booking-card-table {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 70px;
+}
+.Booking-card-table-tab {
+  border: none;
+  padding: 12px 250px 12px 0px;
+  background-color: #080706;
+  color: white;
+}
+.Booking-card-btn {
+  padding: 20px 60px;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+.Booking-card-btn:hover {
+  background-color: #c99e71;
+  color: white;
+}
+.news {
+  background-color: #14110e;
+}
+.news-desc {
+  text-align: center;
+  color: #c99e71;
+  padding-top: 100px;
+}
+.news-title {
+  text-align: center;
+  font-size: 46px;
+  padding: 20px 0px;
+  color: white;
+}
+.news-cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  /* padding-top: 100px; */
+}
+.news-card {
+  background-color: #121315;
+  width: 300px;
+  color: white;
+  padding: 0px 0px;
+}
+.news-card-img img {
+  width: 300px;
+}
+.news-card-infos {
+  display: flex;
+  gap: 150px;
+  padding: 10px 0px;
+  padding-bottom: 40px;
+}
+.news-card-location {
+  padding: 0px 142px 0px 0px;
+}
+.news-card-link {
+  padding: 20px 0px;
+  color: #fb8c16;
+}
+footer {
+  background-color: #14110e;
+}
+.footer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 0px;
+  color: white;
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+}
+.footer-item:hover {
+  color: #c99e71;
+}
+.footer-btn {
+  background-color: #1c1814;
+  border: none;
+  border-radius: 40px;
+  padding: 0px 120px 0px 0px;
+  color: white;
+}
+.footer-btnz {
+  position: absolute;
+  background-color: rgb(154, 132, 132);
+  left: 1270px;
+  top: 5730px;
+  padding: 20px;
+  border-radius: 50px;
+}
+.footer-btnz:hover {
+  background-color: #c99e71;
+}
+@media (max-width: 1200px) {
+  * {
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-a{
-    color: inherit;
-    cursor: pointer;
-}
-.container{
-    max-width: 85%;
-    margin: 0 auto;
-    width: 1440px;
-}
-button{
-    cursor: pointer;
-}
-header{
-    background-color: #14110E; 
-    z-index: 999;
-    position: fixed;
-    width: 100%;
-   
-}
-.header-nav{
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    align-items: center; 
-}
-.header-list{
-    display: flex;
-    gap: 50px;
-}
-.header-item:hover{
-    color: #C99E71;
-}
-.header-lists{
-    display: flex;
-    gap: 50px;
-    cursor: pointer;
-}
-.hero{
-    /* position: relative; */
-    padding: 170px 0px;
-    padding-left: 200px;
-    background-image: url(../img/coffeeimg.png);
-    object-fit: cover contain;
-    background-size: 100% 100%;
-    color: white;
-}
-/* .hero-info{
- 
-} */
-.hero-title{
-    font-style:oblique ;
-    font-size: 65px;
-    width: 500px;
-    padding-top: 0px;
-}
-.hero-desc{
-    font-size: 20px;
-    width: 450px;
-    padding: 40px 0px;
-    opacity: 0.6;
-}
-.hero-btn{
-    font-size: 28px;
-    padding: 15px 35px;
-}
-.hero-btn:hover{
-    background-color: #C99E71;
-    color: white;
-}
-.hero-img img{
-    width: 100%;
-}
-.Service{
-    background-color: #14110E;
-    padding-top: 70px;
-}
-.Service-cards{
-    display: flex;
-    justify-content: center;
-}
-.Service-card-img img{
+  }
+  .hero-title {
+    font-size: 37px;
     width: 300px;
-}
-.Service-card-desc{
-    font-size: 22px;
-    color: white;
-}
-.Service2{
-
-    background-color: #14110E;
-
-}
-.Service2-cards{
+    padding: 0;
+  }
+  .hero-desc {
+    font-size: 15px;
+    width: 250px;
+    padding: 0;
+    padding: 10px 0px;
+  }
+  .hero-btn {
+    font-size: 18px;
+  }
+  .Service2-card-infos {
+    padding: 0;
+    text-align: center;
+  }
+  .Service2-card-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .Service2-card-desc {
+    font-size: 16px;
+    width: 250px;
+  }
+  .Menu-card {
+    padding: 0;
+  }
+  .Menu-card {
+    padding: 0;
+  }
+  .Menu-card-img img {
+    width: 200px;
+  }
+  .popolar-menu-card {
+    padding: 0;
+  }
+  .testimonial-cards {
+    padding: 0;
     display: flex;
-    justify-content: center;    
-    padding-top: 120px;
-    gap: 40px;
-}
-.Service2-card-imgs{
+    gap: 10px;
+    text-align: center;
+  }
+  .testimonial-card-img img {
+    text-align: center;
+    width: 100px;
+  }
+  .testimonial-card-desc {
+    font-size: 15px;
+  }
+  .testimonial-card-2 {
+    display: flex;
+    gap: 140px;
+    /* width: 100px; */
+  }
+  .Booking-img img {
+    width: 300px;
+  }
+  .Booking-card {
+    width: 300px;
+    padding: 0;
+  }
+  .Booking-card-title {
+    font-size: 30px;
+    padding: 6px 0px;
+  }
+  .Booking-card-table {
     display: flex;
     flex-direction: column;
-    width: 250px;
-
-}
-.Service2-card-img img{
-    width: 240px;
-}
-.Service2-card-infos{
-    padding-top: 60px;
-    background-color: #1C1814;
-    width: 30%;
-    padding-left: 70px;
-}
-.Service2-card-info{
-    color: #C99E71;
-    
-}
-.Service2-card-title{
-    color: white;
-    padding: 20px 0px;
-    font-size: 60px;
-    width: 76%;
-
-}
-.Service2-card-desc{
-    width: 300px;
-    color: white;
-}
-.Menu{
-    background-color: #14110E;
-    padding-top: 100px;
-    cursor: pointer;
-
-}
-.Menu-infos{
-    text-align: center;
-    
-}
-.Menu-info{
-    text-align: center;
-    color: #C99E71;
-}
-.Menu-title{
-    text-align: center;
-    font-size: 45px;
-    color: white;
-}
-.Menu-cards{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    padding-top: 40px;
-}
-.Menu-card{
-    background-color: #121315;
-    padding: 30px;
-    text-align: center;
-}
-.Menu-card-title{
-    font-size: 23px;
-    text-transform: uppercase;
-    padding: 20px 0px;
-    color: white;
-}
-.Menu-card-btn{
-    
-    font-size: 24px;
-    padding: 10px 20px;
-    margin-top: 30px;
-}
-.Menu-card-btn:hover{
-background-color: #C99E71;
-color: white;
-}
-.Menu-card-desc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
-    color: white;  
-    padding: 10px 0px;
-}
-.Menu-btn{
-    font-size: 26px;
-    text-align: center;
-    padding: 15px 25px;
-    
-    margin-top: 50px;
-}
-.Menu-btn:hover{
-    background-color: #C99E71;
-    color: white;
-}
-.Machine{
-    background-color: #14110E;
-}
-.Machine-cards{
-    
-    display: flex;
-    justify-content: center;
-    /* gap: 100px; */
-    padding-top: 100px;
-}
-.Machine-card{
-    background-color: #1C1814;
-    padding: 30px 30px;
-    color: white;
-}
-.Machine-card-img{
-    padding: 0px 50px;
-}
-.Machine-card-title{
-    font-size: 46px;
-    width: 310px;
-}
-.Machine-card-desc{
-    width: 500px;
-    text-transform: capitalize;
-    padding: 30px 0px;
-}
-.Machine-card-btn{
+    padding-top: 10px;
+  }
+  .Booking-card-btn {
+    font-size: 10px;
     padding: 10px 20px;
-    font-size: 20px;
-    
-}
-.Machine-card-btn:hover{
-    background-color: #C99E71;
-    color: white;
-}
-.popular-menu{
+  }
+  .news-card-img img {
+    width: 250px;
+  }
+  .footer-cards {
     display: flex;
-    justify-content: center;
-    gap: 100px;
-    background-color: #14110E;
-}
-.popular-menu-desc{
-    text-align: center;
-    background-color: #14110E;
-    padding: 20px 0px;
-    padding-top: 160px;
-    color: #C99E71;
-}
-.popular-menu-title{
-    text-align: center;
-    background-color: #14110E;
-    padding-bottom: 50px;
-    font-size: 40px;
-    color: white;
-}
-
-.popolar-menu-card{
+    gap: 20px;
+  }
+  .footer-list {
+    font-size: 15px;
     display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 20px 20px;
-    border: 1px solid white;
-    color: white;
+    gap: 20px;
+  }
 }
-.popolar-menu-card-img img{
-    width: 40px;
-}
-.popolar-menu-card-desc{
-    padding-right: 100px;
-}
-.popolar-menu-card-price{
-    color: #C99E71;
-}
-.testimonial{
-    background-color: #14110E;
-}
-.testimonial-cards{
-    /* background-color: #121315; */
-    /* width: 500px; */
+@media (max-width: 890px) {
+  .header-list {
+    display: none;
+  }
+  .hero {
+    background-size: 100% 100%;
+    object-fit: cover;
+  }
+  .Service-card-img img {
+    width: 200px;
+  }
+  .Service-card-desc {
+    font-size: 15px;
+  }
+  .hero {
+    padding-left: 100px;
+  }
+  .Service2-card-desc {
+    font-size: 10px;
+    width: 150px;
+  }
+  .Service2-card-imgs {
+    width: 180px;
+  }
+  .Service2-card-img img {
+    width: 170px;
+  }
+  .Service2-cards {
     display: flex;
-    justify-content:center;
-    gap: 100px;
-}
-.testimonial-desc{
-    text-align: center;
-    color: #C99E71;
-    padding-top: 100px;
-}
-.testimonial-card-img{
-    padding-right: 11px;
-}
-.testimonial-title{
-    text-align: center;
-    color: white;
-    font-size: 40px;
-}.testimonial-card{
+    gap: 10px;
+  }
+  .Menu-card-img img {
+    width: 150px;
+  }
+  .Menu-card-title {
+    font-size: 15px;
+  }
+  .Menu-card-btn {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+  .Menu-cards {
+    display: flex;
+    gap: 10px;
+  }
+  .Menu-btn {
+    font-size: 15px;
+  }
+  .testimonial-card {
+    width: 300px;
+  }
+  .testimonial-card-img img {
+    width: 70px;
+  }
+  .testimonial-card-desc {
+    font-size: 11px;
+  }
+  .testimonial-info {
+    display: flex;
+  }
+  .testimonial-card-2-desc {
+    font-size: 12px;
+  }
+  .Machine-cards {
+    width: 200px;
+  }
+  .Machine-card {
+    width: 300px;
+    padding: 0;
+  }
+  .Machine-card-title {
+    font-size: 30px;
+    width: 250px;
+  }
+  .Machine-card-desc {
+    font-size: 16px;
+    width: 200px;
+  }
+  .popolar-menu-card {
+    width: 260px;
+    display: flex;
+    gap: 0px;
+  }
+  .news-card-img img {
+    width: 200px;
+  }
+  .news-card {
+    width: 200px;
+  }
+  .news-card-infos {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-cards {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    width: 500px;
-    padding: 40px 5px;
-    background-color: #121315;
+  }
+  .footer-btn {
+    padding: 10px 20px;
+  }
+  .Booking-img img {
+    width: 200px;
+  }
+  .Booking-card-desc {
+    font-size: 12px;
+  }
+  .Booking-card-title {
+    font-size: 20px;
+  }
+  .Booking-card-table-tab {
+    padding: 2px 10px;
+  }
+  .Booking-card-btn {
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
 }
-.testimonial-card-desc{
-    width: 350px;
-    font-size: 21px;
-    color: white;
-}
-.testimonial-card-2{
-    display: flex;
-    gap: 250px;
-    padding: 10px 0px;
-    align-items: center;
-    color: white;
-}
-.testimonial-card-2-dec{
-    display: flex;
-}
-.testimonial-btns{
-    padding-top: 50px;
-    padding-left: 78%;
-}
-.left{
-    background-color: #121315;
-    font-size: 30px;
-    padding: 10px 15px;
-    border-radius: 50%;
-}
-.left:hover{
-    background-color: #C99E71;
-}
-.right{
-    background-color: #121315;
-    font-size: 30px;
-    padding: 10px 15px;
-    border-radius: 50%;
-}
-.right:hover{
-    background-color: #C99E71;
-}
-.Booking{
-    background-color: #14110E;
-    padding-top: 50px;
-    padding-left: 100px;
-}
-.Booking-cards{
-    display: flex;
-    /* justify-content: space-around; */
-    gap: px;
-}
-.Booking-card{
-    background-color: #1C1814;
-    padding: 10px 80px;
-}
-.Booking-card-title{
-    font-size: 50px;
-    color: white;
-    text-align: center;
-    padding: 30px 0px;
-}
+@media (max-width: 676px) {
+  .header-list {
+    display: none;
+  }
+  .hero {
+    background-size: 100% 100%;
+    object-fit: cover;
+  }
 
-.Booking-img img{
-    width: 500px;
-}
-.Booking-card-desc{
-    color: #fb8c16;
-    text-align: center;
-}
-.Booking-card-table{
+  .Service-card-img img {
+    width: 120px;
+  }
+  .Service-card-desc {
+    font-size: 12px;
+  }
+  .hero {
+    padding-left: 50px;
+  }
+  .Service2-card-desc {
+    font-size: 7px;
+    width: 150px;
+  }
+  .Service2-card-imgs {
+    width: 120px;
+  }
+  .Service2-card-img img {
+    width: 115px;
+  }
+  .Service2-cards {
+    display: flex;
+    gap: 4px;
+  }
+  .Menu-card-img img {
+    width: 100px;
+  }
+  .Menu-card-title {
+    font-size: 8px;
+  }
+  .Menu-card-btn {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+  .Menu-card-desc {
+    display: flex;
+    gap: 2px;
+    font-size: 8px;
+  }
+  .Menu-cards {
+    display: flex;
+    gap: 10px;
+  }
+  .Menu-btn {
+    font-size: 10px;
+  }
+  .testimonial-card {
+    width: 200px;
+  }
+  .testimonial-card-img img {
+    width: 70px;
+  }
+  .testimonial-card-desc {
+    font-size: 11px;
+  }
+  .testimonial-info {
+    display: flex;
+  }
+  .testimonial-card-2-desc {
+    font-size: 12px;
+  }
+  .Machine-cards {
+    width: 200px;
+  }
+  .Machine-card {
+    width: 300px;
+    padding: 0;
+  }
+  .Machine-card-img img {
+    width: 150px;
+  }
+  .Machine-card-title {
+    font-size: 20px;
+    width: 120px;
+  }
+  .Machine-card-desc {
+    font-size: 10px;
+    width: 100px;
+  }
+  .Machine-card-btn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .popular-menu {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-top:70px ;
-}
-.Booking-card-table-tab{
-    border: none;
-    padding: 12px 250px 12px 0px;
-    background-color: #080706;
-    color: white;
-}
-.Booking-card-btn{
-    padding: 20px 60px;
-    margin-top: 80px; 
-    margin-left: 100px;
-}
-.Booking-card-btn:hover{
-    background-color: #C99E71;
-    color: white;
-}
-.news{
-    background-color: #14110E;
-}
-.news-desc{
-    text-align: center;
-    color: #C99E71;
-    padding-top: 100px;
-}
-.news-title{
-    text-align: center;
-    font-size: 46px;
-    padding: 20px 0px;
-    color: white;
-}
-.news-cards{
+    padding-left: 100px;
+  }
+  .popular-menu-cards {
+    width: 180px;
     display: flex;
-    gap: 25px;
-    justify-content: center;
-    /* padding-top: 100px; */
-}
-.news-card{
-    background-color: #121315;
-    width: 300px;
-    color: white;
-    padding: 0px 0px;
-}
-.news-card-img img{
-    width: 300px;
-}
-.news-card-infos{
+    flex-direction: column;
+  }
+  .popolar-menu-card {
     display: flex;
-    gap: 150px;
-    padding: 10px 0px;
-    padding-bottom: 40px;
-}
-.news-card-location{
-    padding: 0px 142px 0px 0px;
-}
-.news-card-link{
-    padding: 20px 0px;
-    color: #fb8c16;
-}
-footer{
-    background-color: #14110E;
-}
-.footer-cards{
+    gap: 10px;
+  }
+  .popolar-menu-card-desc {
+    font-size: 10px;
+  }
+  .popolar-menu-card-desc {
     display: flex;
-    justify-content: center;
-    gap: 60px;
-    padding: 80px 0px;
-    color: white;
-    
-}
-.footer-list{
+    gap: 2px;
+  }
+  .news-card-img img {
+    width: 100px;
+  }
+  .news-card-infos {
+    font-size: 10px;
+  }
+  .news-card {
+    width: 100px;
+  }
+  .news-card-infos {
     display: flex;
-    align-items: center;
-    gap: 50px;
+    gap: 20px;
+  }
+  .footer-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-btn {
+    padding: 10px 20px;
+  }
+  .Booking {
+    padding-left: 20px;
+  }
+  .Booking-img img {
+    width: 200px;
+  }
+  .Booking-card-desc {
+    font-size: 12px;
+  }
+  .Booking-card-title {
     font-size: 20px;
+  }
+  .Booking-card-table-tab {
+    padding: 2px 10px;
+  }
+  .Booking-card-btn {
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
 }
-.footer-item:hover{
-    color: #C99E71;
-}
-.footer-btn{
-    background-color: #1C1814;
-    border: none;  
-    border-radius: 40px; 
-    padding: 0px 120px 0px 0px;
-    color: white;
-}
-.footer-btnz{
-    position: absolute;
-    background-color: rgb(154, 132, 132);
-    left: 1270px;
-    top: 5730px;
-    padding: 20px;
-    border-radius: 50px;
-}
-.footer-btnz:hover{
-    background-color: #C99E71;
-}
-@media(max-width:1200px){
-    *{
-        padding: 0;
-    }
-    .hero-title{
-        font-size: 37px;
-        width: 300px;
-        padding: 0;
-    }
-    .hero-desc{
-        font-size: 15px;
-        width: 250px;
-        padding: 0;
-        padding: 10px 0px;
-    }
-    .hero-btn{
-    font-size: 18px;
-    }
-    .Service2-card-infos{
-        padding: 0;
-        text-align: center;
-    }
-    .Service2-card-title{
-        font-size: 30px;
-        text-align: center;
-    }
-    .Service2-card-desc{
-        font-size: 16px;
-        width: 250px;
-    }
-    .Menu-card{
-        padding: 0;
-    }
-    .Menu-card{
-padding: 0;
-    }
-    .Menu-card-img img{
-        width: 200px;
-    }
-    .popolar-menu-card{
-        padding: 0;
-    }
-    .testimonial-cards{
-        padding: 0;
-        display: flex;
-        gap: 10px;
-        text-align: center;
-    }
-    .testimonial-card-img img{
-        text-align: center;
-        width: 100px;
-      
-    }
-    .testimonial-card-desc{
-        font-size: 15px;
-    }
-    .testimonial-card-2{
-        display: flex;
-        gap: 140px;
-        /* width: 100px; */
-    }
-    .Booking-img img{
-        width: 300px;
-    }
-    .Booking-card{
-        width: 300px;
-        padding: 0;
-    }
-    .Booking-card-title{
-        font-size: 30px;
-        padding:6px 0px ;
-    }
-    .Booking-card-table{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding-top: 10px;
-    }
-    .Booking-card-btn{
-        font-size: 10px;
-        padding: 10px 20px;
-
-    }
-    .news-card-img img{
-        width: 250px;
-    }   
-    .footer-cards{
-        display: flex;
-        gap: 20px;
-       
-    }
-    .footer-list{
-         font-size: 15px;
-         display: flex;
-         gap: 20px;
-    }
-}
-@media(max-width:890px){
-    .header-list{
-        display: none;
-    }
-    .hero{
-        background-size:100% 100%;
+@media (max-width: 456px) {
+  .header-lists {
+    display: none;
+  }
+  .header-list {
+    display: none;
+  }
+  .hero {
+    background-size: 100% 100%;
     object-fit: cover;
-    }
-    .Service-card-img img{
-        width: 200px;
-    }
-    .Service-card-desc{
-        font-size: 15px;
-    }
-    .hero{
-        padding-left: 100px;
-    }
-    .Service2-card-desc{
-        font-size: 10px;
-        width: 150px;
-    }
-    .Service2-card-imgs{
-        width: 180px;
-    }
-    .Service2-card-img img{
-        width: 170px;
-    }
-    .Service2-cards{
-        display: flex;
-        gap: 10px;
-    }
-    .Menu-card-img img{
-        width: 150px;
-    }
-    .Menu-card-title{
-        font-size: 15px;
-    }.Menu-card-btn{
-        font-size: 14px;
-        padding: 7px 15px;
-    }
-    .Menu-cards{
-        display: flex;
-        gap: 10px;
+  }
+  .Service-card-img img {
+    width: 100px;
+  }
+  .Service-card-desc {
+    font-size: 10px;
+  }
+  .hero {
+    padding-left: 10px;
+  }
+  .hero-desc {
+    font-size: 10px;
+    width: 100px;
+  }
+  .hero-title {
+    font-size: 20px;
+    width: 150px;
+  }
+  .hero-btn {
+    padding: 2px 10px;
+  }
+  .Service2-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Service2-card-desc {
+    padding-left: 20px;
+    font-size: 8px;
+    text-align: center;
+  }
+  .Service2-card-infos {
+    width: 300px;
+    text-align: center;
+  }
 
-    }
-    .Menu-btn{
-        font-size: 15px;
-    }
-    .testimonial-card{
-        width: 300px;
-    }
-    .testimonial-card-img img{
-        width: 70px;
-    }
-    .testimonial-card-desc{
-        font-size: 11px;
-    }
-    .testimonial-info{
-        display: flex;
-    }
-    .testimonial-card-2-desc{
-        font-size: 12px;
-    }
-    .Machine-cards{
-        width: 200px;
-    }
-    .Machine-card{
-        width: 300px;
-        padding: 0;
-    }
-    .Machine-card-title{
-        font-size: 30px;
-        width: 250px;
-    }
-    .Machine-card-desc{
-        font-size: 16px;
-        width: 200px;
-    }
-    .popolar-menu-card{
-        width: 260px;
-        display: flex;
-        gap: 0px;
-    }
-    .news-card-img img{
-        width: 200px;
-    }
-    .news-card{
-        width: 200px;
-
-    }
-    .news-card-infos{
-        display: flex;
-        gap: 20px;
-    }
-    .footer-cards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .footer-btn{
-        padding: 10px 20px;
-    }
-    .Booking-img img{
-        width: 200px;
-    }
-    .Booking-card-desc{
-        font-size: 12px;
-    }
-    .Booking-card-title{
-        font-size: 20px;
-    }
-    .Booking-card-table-tab{
-        padding: 2px 10px   ;
-    }
-    .Booking-card-btn{
-        padding: 10px 20px;
-        margin-top: 50px;
-    }
-}@media(max-width:676px){
-    .header-list{
-        display: none;
-    }
-    .hero{
-        background-size:100% 100%;
-        object-fit: cover;
-    }
-    
-    .Service-card-img img{
-        width: 120px;
-    }
-    .Service-card-desc{
-        font-size: 12px;
-    }
-    .hero{
-        padding-left: 50px;
-    }
-    .Service2-card-desc{
-        font-size: 7px;
-        width: 150px;
-    }
-    .Service2-card-imgs{
-        width: 120px;
-    }
-    .Service2-card-img img{
-        width: 115px;
-    }
-    .Service2-cards{
-        display: flex;
-        gap: 4px;
-    }
-    .Menu-card-img img{
-        width: 100px;
-    }
-    .Menu-card-title{
-        font-size: 8px;
-    }.Menu-card-btn{
-        font-size: 14px;
-        padding: 7px 15px;
-    }
-    .Menu-card-desc{
-        display: flex;
-        gap: 2px;
-        font-size: 8px;
-    }
-    .Menu-cards{
-        display: flex;
-        gap: 10px;
-
-    }
-    .Menu-btn{
-        font-size: 10px;
-    }
-    .testimonial-card{
-        width: 200px;
-    }
-    .testimonial-card-img img{
-        width: 70px;
-    }
-    .testimonial-card-desc{
-        font-size: 11px;
-    }
-    .testimonial-info{
-        display: flex;
-    }
-    .testimonial-card-2-desc{
-        font-size: 12px;
-    }
-    .Machine-cards{
-        width: 200px;
-    }
-    .Machine-card{
-        width: 300px;
-        padding: 0;
-    }
-    .Machine-card-img img{
-        width: 150px;
-    }
-    .Machine-card-title{
-        font-size: 20px;
-        width: 120px;
-    }
-    .Machine-card-desc{
-        font-size: 10px;
-        width: 100px;
-    }
-    .Machine-card-btn{
-        padding: 5px 10px;
-        font-size: 10px;
-    }.popular-menu{
-        display: flex;
-        flex-direction: column;
-        padding-left: 100px;
-    }
-    .popular-menu-cards{
-        width: 180px;
-        display: flex;
-        flex-direction: column;
-    }
-    .popolar-menu-card{
-        display: flex;
-        gap: 10px;
-    }
-    .popolar-menu-card-desc{
-        font-size: 10px;
-    }
-    .popolar-menu-card-desc{
-        display: flex;
-        gap: 2px;
-    }
-    .news-card-img img{
-        width: 100px;
-    }
-    .news-card-infos{
-        font-size: 10px;
-    }
-    .news-card{
-        width: 100px;
-
-    }
-    .news-card-infos{
-        display: flex;
-        gap: 20px;
-    }
-    .footer-cards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .footer-btn{
-        padding: 10px 20px;
-    }
-    .Booking{
-        padding-left: 20px;
-    }
-    .Booking-img img{
-        width: 200px;
-    }
-    .Booking-card-desc{
-        font-size: 12px;
-    }
-    .Booking-card-title{
-        font-size: 20px;
-    }
-    .Booking-card-table-tab{
-        padding: 2px 10px   ;
-    }
-    .Booking-card-btn{
-        padding: 10px 20px;
-        margin-top: 50px;
-    }
-}@media(max-width:456px){
-    .header-lists{
-        display: none;
-    }
-    .header-list{
-        display: none;
-    }
-    .hero{
-        background-size:100% 100%;
-    object-fit: cover;
-    }
-    .Service-card-img img{
-        width: 100px;
-    }
-    .Service-card-desc{
-        font-size: 10px;
-    }
-    .hero{
-        padding-left: 10px;
-    }
-    .hero-desc{
-        font-size: 10px;
-        width: 100px;
-    }
-    .hero-title{
-        font-size: 20px;
-        width: 150px;
-    }
-    .hero-btn{
-        padding: 2px 10px;
-    }
-    .Service2-cards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .Service2-card-desc{
-       padding-left: 20px;
-        font-size: 8px;
-        text-align: center;
-    }
-    .Service2-card-infos{
-        width: 300px;
-        text-align: center;
-    }
-    
-    .Service2-card-imgs{
-        width: 60px;
-    }
-    .Service2-card-img img{
-        width: 55px;
-    }
-    .Service2-cards{
-        display: flex;
-        gap: 10px;
-    }
-    .Menu-card-img img{
-        width: 100px;
-    }
-    .Menu-card-title{
-        font-size: 10px;
-    }.Menu-card-btn{
-        font-size: 12px;
-        padding: 7px 15px;
-    }
-    .Menu-cards{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-
-    }
-    .Menu-btn{
-        font-size: 10px;
-    }
-    .testimonial-cards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .testimonial-card{
-        width: 100px;
-    }
-    .testimonial-card-img img{
-        width: 30px;
-    }
-    .testimonial-card-desc{
-        font-size: 11px;
-    }
-    .testimonial-info{
-        display: flex;
-    }
-    .testimonial-card-2{
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .testimonial-card-2-desc{
-        font-size: 12px;
-    }
-    .Machine-cards{
-        width: 200px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .Machine-card{
-        width: 300px;
-        padding: 0;
-    }
-    .Machine-card-title{
-        font-size: 30px;
-        width: 250px;
-    }
-    .Machine-card-desc{
-        font-size: 16px;
-        width: 200px;
-    }.popular-menu{
-        padding-left: 1px;
-    }
-    .popolar-menu-card{
-        padding-left: 10px;
-        width: 260px;
-        display: flex;
-        gap: 0px;
-    }
-    .news-card-img img{
-        width: 200px;
-    }
-    .news-cards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .news-card{
-        width: 200px;
-
-    }
-    .news-card-infos{
-        display: flex;
-        gap: 20px;
-    }
-    .footer-cards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .footer-btn{
-        padding: 10px 20px;
-    }
-    .footer-list{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .Booking-cards{
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-    .Booking-img img{
-        width: 200px;
-    }
-    .Booking-card-desc{
-        font-size: 12px;
-    }
-    .Booking-card-title{
-        font-size: 20px;
-    }
-    .Booking-card-table-tab{
-        padding: 2px 10px   ;
-    }
-    .Booking-card-btn{
-        padding: 10px 20px;
-        margin-top: 50px;
-    }
+  .Service2-card-imgs {
+    width: 60px;
+  }
+  .Service2-card-img img {
+    width: 55px;
+  }
+  .Service2-cards {
+    display: flex;
+    gap: 10px;
+  }
+  .Menu-card-img img {
+    width: 100px;
+  }
+  .Menu-card-title {
+    font-size: 10px;
+  }
+  .Menu-card-btn {
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+  .Menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .Menu-btn {
+    font-size: 10px;
+  }
+  .testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonial-card {
+    width: 100px;
+  }
+  .testimonial-card-img img {
+    width: 30px;
+  }
+  .testimonial-card-desc {
+    font-size: 11px;
+  }
+  .testimonial-info {
+    display: flex;
+  }
+  .testimonial-card-2 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .testimonial-card-2-desc {
+    font-size: 12px;
+  }
+  .Machine-cards {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Machine-card {
+    width: 300px;
+    padding: 0;
+  }
+  .Machine-card-title {
+    font-size: 30px;
+    width: 250px;
+  }
+  .Machine-card-desc {
+    font-size: 16px;
+    width: 200px;
+  }
+  .popular-menu {
+    padding-left: 1px;
+  }
+  .popolar-menu-card {
+    padding-left: 10px;
+    width: 260px;
+    display: flex;
+    gap: 0px;
+  }
+  .news-card-img img {
+    width: 200px;
+  }
+  .news-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-card {
+    width: 200px;
+  }
+  .news-card-infos {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-btn {
+    padding: 10px 20px;
+  }
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Booking-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Booking-img img {
+    width: 200px;
+  }
+  .Booking-card-desc {
+    font-size: 12px;
+  }
+  .Booking-card-title {
+    font-size: 20px;
+  }
+  .Booking-card-table-tab {
+    padding: 2px 10px;
+  }
+  .Booking-card-btn {
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
 }

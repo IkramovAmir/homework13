@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+}
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  width: 1440px;
+}
+button {
+  cursor: pointer;
+}
